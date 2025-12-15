@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hundred Day War</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .museum-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .artifacts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .artifact-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .artifact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .artifact-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #6c757d;
+            border-bottom: 2px solid #dee2e6;
+            overflow: hidden;
+        }
+
+        .artifact-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .artifact-content {
+            padding: 1.5rem;
+        }
+
+        .artifact-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .artifact-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .artifacts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Hundred Day War 1815</h1>
+        <p>Explore nine artifacts from Napoleon’s Hundred Days (1815) that trace his dramatic return, rapid downfall, and lasting impact on European history.</p>
+    </header>
+
+    <div class="museum-container">
+        <div class="artifacts-grid">
+            <!-- Artifact 1 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="proclamation.jpg">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">Napoleon’s Proclamation from Elba (Feb 26, 1815)</h3>
+                    <p class="artifact-description">
+                        This written proclamation announced Napoleon’s escape from Elba and framed his return as a mission to restore France’s honor and stability. It marks the true beginning of the Hundred Days.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 2 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="bicorne.jpg">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">The Bicorne Hat Worn by Napoleon</h3>
+                    <p class="artifact-description">
+                        Napoleon’s iconic black bicorne hat, worn during his return to power, symbolized his authority and instantly recognizable leadership. It became a visual rallying point for supporters as he marched toward Paris.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 3 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="acte.webp">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">The Acte Additionnel (April 22, 1815)</h3>
+                    <p class="artifact-description">
+                        This was a revised French constitution issued by Napoleon to appear more liberal and gain public support. It shows how Napoleon tried to adapt politically, not just militarily, during the Hundred Days.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 4 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="eagle.jpeg">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">French Imperial Eagle Standards</h3>
+                    <p class="artifact-description">
+                        These military standards were carried by Napoleon’s regiments during the campaign. They represented loyalty to the Empire and were powerful morale symbols for French troops.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 5 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="map.jpg">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">Map of the Belgian Campaign (June 1815)</h3>
+                    <p class="artifact-description">
+                        Military maps used by Napoleon and Allied commanders show troop movements leading up to the major battles. These maps highlight strategy and planning, not just the fighting itself.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 6 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="sword.jpeg">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">Marshal Ney’s Sword</h3>
+                    <p class="artifact-description">
+                        Marshal Michel Ney was one of Napoleon’s most famous generals. His sword represents the leadership and internal divisions within the French command during the campaign.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 7 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="carriage.webp">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">Napoleon’s Traveling Carriage (Captured June 1815)</h3>
+                    <p class="artifact-description">
+                        Napoleon’s personal carriage was abandoned during his retreat after the Belgian campaign and later captured by Prussian forces. The carriage contained personal items, maps, and supplies, offering insight into Napoleon’s mobile command style and the realities of warfare during the Hundred Days.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 8 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="surgeon.jpg">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">The Waterloo Battlefield Surgeon’s Kit (June 18, 1815)</h3>
+                    <p class="artifact-description">
+                        Medical tools used during Waterloo reflect the human cost of the conflict. This artifact focuses on soldiers’ suffering rather than strategy or leadership.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Artifact 9 -->
+            <div class="artifact-card">
+                <div class="artifact-image">
+                    <img src="document.JPG">
+                </div>
+                <div class="artifact-content">
+                    <h3 class="artifact-title">Napoleon’s Abdication Document (June 22, 1815)</h3>
+                    <p class="artifact-description">
+                        This written document formally ended Napoleon’s rule for the second time. It represents the conclusion of the Hundred Days and the collapse of his final attempt to regain power.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
